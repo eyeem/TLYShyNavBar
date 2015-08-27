@@ -66,7 +66,7 @@ const CGFloat contractionVelocity = 300.f;
     for (UIView* view in self.view.subviews)
     {
         bool isBackgroundView = view == self.view.subviews[0];
-        bool isViewHidden = view.hidden || view.alpha < FLT_EPSILON;
+        bool isViewHidden = view.hidden;
         
         if (!isBackgroundView && !isViewHidden)
         {
